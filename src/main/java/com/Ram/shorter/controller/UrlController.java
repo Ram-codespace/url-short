@@ -38,10 +38,10 @@ public class UrlController {
     public static class PageController {
 
         @GetMapping("/")
+        @ResponseBody
         public String home() {
-            return "index";
+            return "Hello, i am Ram";
         }
-
     }
 
     @PostMapping("/shorten")
